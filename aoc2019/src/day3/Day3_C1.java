@@ -8,6 +8,10 @@ import java.io.InputStreamReader;
 public class Day3_C1 {
 	public static BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
 	
+	public static void main(String args[]) throws IOException {
+		HashMap<String, Integer> wire = allSteps();
+	}
+	
 	public static int[] getDir(char c) {
 		switch (c) {
 			case 'L': return new int[] {-1, 0};
@@ -20,6 +24,8 @@ public class Day3_C1 {
 	
 	public static HashMap<String, Integer> allSteps() throws IOException{
 		HashMap<String, Integer> wire = new HashMap<>();
+		
+		
 		
 		String[] input = r.readLine().split(",");
 		
@@ -40,6 +46,17 @@ public class Day3_C1 {
 			}
 		}
 		return wire;
+	}
+	
+
+	public static int compare(HashMap<String, Integer> wire) throws IOException {
+		String[] newWire = r.readLine().split(",");
+		for(int i = 0; i < newWire.length; i++) {
+			
+		}
+		
+		
+		return 3; 
 	}
 
 }
